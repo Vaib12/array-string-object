@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+    </body>
+<script>
+arr=[];
+arr1=[];
+r="abcdefghijklmnopqrstuvwxyz"
+function pangram(s){
+    l=s.toLowerCase();
+    for(k of l){
+        if(r.includes(k)){
+            arr.push(k);
+        }
+    }
+    for(k of arr){
+        if(!arr1.includes(k)){
+            arr1.push(k);
+        }
+    }
+    console.log(arr1);
+    if(arr1.length==26){
+        alert(1);
+    }
+    else{
+        alert(0);
+    }
+}
+pangram(prompt());
+</script>
+
+</html>
